@@ -1,0 +1,129 @@
+/* Estilo geral */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #000000;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    background-image: url('349af1877ccc43e1bd30f3ed040b7dd7.png'); /* Fundo com grafite que remete à estética de Zaun */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    background-color: rgba(29, 29, 49, 0.9); /* Fundo escuro translúcido */
+    color: #ff66b3; /* Rosa neon */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 3px solid #007acc;
+}
+
+header:after {
+    content: "What could possibly go wrong?"; /* Easter egg da Jinx */
+    font-size: 14px;
+    color: #ff00ff;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-style: italic;
+}
+
+/* Menu de Navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(29, 29, 49, 0.8);
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #80dfff; /* Azul neon */
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff66b3;
+    text-shadow: 0px 0px 10px #ff66b3;
+}
+
+/* Estilo da Área Principal */
+main {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Formulário */
+form label {
+    color: #80dfff;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #292929;
+    color: white;
+}
+
+form input[type="submit"], form input[type="reset"] {
+    background-color: #ff66b3;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+    background-color: #ff1a66;
+    box-shadow: 0px 0px 10px #ff66b3;
+}
+
+/* Rodapé */
+footer {
+    background-color: rgba(29, 29, 49, 0.9);
+    text-align: center;
+    padding: 15px;
+    color: #80dfff;
+    border-top: 3px solid #ff66b3;
+}
+
+footer:after {
+    content: "Vi e Powder também."; /* Referência à relação entre Jinx e sua antiga identidade, Powder */
+    display: block;
+    font-size: 14px;
+    color: #ff66b3;
+    margin-top: 5px;
+}
+
+/* Easter Egg: Clicar em links adiciona um efeito de faísca */
+nav ul li a:active {
+    animation: spark 0.5s ease-out forwards;
+}
+
+@keyframes spark {
+    0% {
+        color: #ff66b3;
+    }
+    100% {
+        color: #1a1a1a;
+        text-shadow: 0px 0px 20px #ff66b3;
+    }
+}
