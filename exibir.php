@@ -14,7 +14,7 @@
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
-            <li><a href="exibir.html">Exibir Dados</a></li>
+            <li><a href="exibir.php">Exibir Dados</a></li>
             <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
         </ul>
     </nav>
